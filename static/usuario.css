@@ -1,0 +1,103 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88.1svh;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 40%;
+  padding: 100px;
+  box-shadow: inset 20px 20px 30px rgba(255, 255, 255, 0.03), inset -20px -20px 30px rgba(0, 0, 0, 0.3), -20px -20px 30px rgba(255, 255, 255, 0.03), 20px 20px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+}
+
+form h1 {
+  color: var(--txt1);
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.inputBox {
+  font-size: 1.3rem;
+  position: relative;
+  width: 100%;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: var(--txt1);
+  font-size: 1em;
+  transition: 0.2s;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0.75vw;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.25);
+  transition: 0.2s;
+}
+
+.inputBox:nth-child(3) input,
+.inputBox:nth-child(3) span,
+.inputBox:nth-child(4) input,
+.inputBox:nth-child(4) span {
+  margin-top: 10px;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  letter-spacing: 0.2em;
+  background-color: var(--bg1);
+  color: var(--color1);
+  border-radius: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid var(--color1);
+}
+
+.button {
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: var(--txt1);
+  background: transparent;
+  border: solid 1px transparent;
+  border-radius: 20px;
+  outline: none;
+  padding: 20px 100px;
+  margin: 50px 20px;
+  box-shadow: -20px -20px 30px rgba(255, 255, 255, 0.03), 20px 20px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  border: solid 1px var(--color1);
+}
+
+.new span {
+  color: var(--txt1);
+}
+
+.new a {
+  color: var(--color1);
+}/*# sourceMappingURL=usuario.css.map */

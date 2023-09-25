@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/static/header.css">
+  <link rel="stylesheet" href="/static/global.css">
+  <link rel="stylesheet" href="/static/bag.css">
+
+  <script src="https://kit.fontawesome.com/6eb4322f27.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" href="../img/logo.ico">
+  <title>Sacola</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="/index.html" class="profile_picture">
+        <img src="/img/logo.svg" alt="Logo Website" class="profile_picture">
+        <p>Brand</p>
+      </a>
+      <div class="search-container">
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+          <a href="">
+            <img src="/img/magnifying_glass.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <ul class="user-menu">
+        <a href="#favoritos">
+          <p class="user-titles">Favoritos</p>
+          <img src="/img/heart.svg" alt="">
+        </a>
+        <a href="./usuario.html">
+          <p class="user-titles">Usuário</p>
+          <img src="/img/user.svg" alt="">
+        </a>
+      </ul>
+      <div class="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+      <div class="product-container">
+        <img src="/img/mug-mockup.jpg" alt="">
+        <div class="info-container">
+          <a href="product-1.html">Mug Mockup - Brand</a>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid fuga dignissimos aliquam alias
+            dolorum!</p>
+          <p>Quantidade: 999</p>
+          <h2>Preço: 999,99</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="order">
+      <h1>Subtotal</h1>
+      <h2>999,99</h2>
+      <hr>
+      <h3>Shipping: 999,99</h3>
+      <hr>
+      <h1>Total</h1>
+      <h2>999,99</h2>
+
+      <button>Buy</button>
+    </section>
+  </main>
+
+  <script src="/src/header.js"></script>
+</body>
+
+</html>
