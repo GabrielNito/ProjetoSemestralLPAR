@@ -1,5 +1,8 @@
 main {
+  position: relative;
+  top: -20vh;
   width: 100%;
+  height: 100%;
 }
 main .product-container {
   display: flex;
@@ -7,99 +10,114 @@ main .product-container {
   align-items: center;
   gap: 5%;
   width: 100%;
-  height: 100%;
+  background-image: url(../img/background-1-1080.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 10/5;
 }
 main .product-container .images-container {
-  width: 40%;
   aspect-ratio: 1/1;
   display: flex;
   justify-content: end;
   align-items: center;
+  width: 35%;
+  margin-top: 12vh;
+  border-radius: 50px;
+  border-top-left-radius: 0;
+  box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.1);
 }
 main .product-container .images-container img {
-  width: 75%;
-  height: 75%;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50px;
-  box-shadow: -20px -20px 30px rgba(255, 255, 255, 0.03), 20px 20px 30px rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 0;
 }
 main .product-container .infos-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   aspect-ratio: 1/1;
-  width: 40%;
+  width: 35%;
+  margin-top: 12vh;
+}
+main .product-container .infos-container .infos {
+  background-color: var(--bg2);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border-top-left-radius: 0;
+  padding: 50px;
+  box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
-  color: var(--txt1);
+  align-items: start;
 }
-main .product-container .infos-container h1,
-main .product-container .infos-container p,
-main .product-container .infos-container h2,
-main .product-container .infos-container a {
+main .product-container .infos-container .infos h1,
+main .product-container .infos-container .infos p,
+main .product-container .infos-container .infos h2,
+main .product-container .infos-container .infos a {
   margin: 10px;
 }
-main .product-container .infos-container h1 {
-  color: var(--txt1);
-  font-size: 3rem;
+main .product-container .infos-container .infos h1 {
+  font-size: 2.5rem;
 }
-main .product-container .infos-container p {
-  color: var(--txt1);
-  font-size: 1.25rem;
-}
-main .product-container .infos-container h2 {
-  color: var(--txt1);
-  font-size: 3rem;
-}
-main .product-container .infos-container .rating {
-  display: flex;
-  align-items: center;
-  font-weight: 300;
-}
-main .product-container .infos-container .rating .rating-star {
+main .product-container .infos-container .infos p {
   font-size: 1.5rem;
-  color: var(--color1);
 }
-main .product-container .infos-container .shipping {
+main .product-container .infos-container .infos h2 {
+  font-size: 2rem;
+}
+main .product-container .infos-container .infos .rating {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+main .product-container .infos-container .infos .rating .rating-star {
+  font-size: 1.5rem;
+  color: var(--color5);
+}
+main .product-container .infos-container .infos .shipping {
   margin-left: 10px;
   display: flex;
   align-items: center;
-  color: var(--txt1);
-  font-weight: 300;
-  font-size: 1rem !important;
+  font-weight: 500;
+  font-size: 1.25rem !important;
 }
-main .product-container .infos-container .shipping p {
-  font-size: 1rem;
+main .product-container .infos-container .infos .shipping p {
+  font-size: 1.25rem;
   margin: 10px 5px;
 }
-main .product-container .infos-container .shipping h3 {
+main .product-container .infos-container .infos .shipping h3 {
   margin: 10px 0;
-  font-weight: 300;
+  font-weight: 500;
 }
-main .product-container .infos-container .favorite {
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  font-weight: 300;
-  font-size: 1rem !important;
-}
-main .product-container .infos-container .favorite p {
-  font-size: 1rem;
-  margin: 10px 5px;
-}
-main .product-container .infos-container .description-link {
+main .product-container .infos-container .infos .description-link {
   margin: 0 0 0 10px;
-  color: var(--txt1);
   text-decoration: none;
-  font-weight: 300;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 1.25rem;
   width: -moz-fit-content;
   width: fit-content;
 }
-main .product-container .infos-container .description-link i {
+main .product-container .infos-container .infos .description-link i {
   margin: 10px 5px;
 }
-main .product-container .infos-container .add-to-cart {
+main .product-container .infos-container .infos .favorite {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.25rem !important;
+}
+main .product-container .infos-container .infos .favorite p {
+  font-size: 1.25rem;
+  margin: 10px 5px;
+}
+main .product-container .infos-container .infos .add-to-cart {
   text-decoration: none;
   width: -moz-fit-content;
   width: fit-content;
@@ -109,42 +127,45 @@ main .product-container .infos-container .add-to-cart {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: var(--txt1);
   background: transparent;
   border: solid 1px transparent;
   border-radius: 20px;
   outline: none;
-  padding: 0 50px;
+  padding: 25px 50px;
   margin: 20px;
-  box-shadow: -20px -20px 30px rgba(255, 255, 255, 0.03), 20px 20px 30px rgba(0, 0, 0, 0.3);
+  background-color: var(--color1);
   transition: all 0.3s ease;
 }
-main .product-container .infos-container .add-to-cart img {
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 25%;
-  margin: -20px 10px;
-}
-main .product-container .infos-container .add-to-cart:hover {
+main .product-container .infos-container .infos .add-to-cart:hover {
   border: solid 1px var(--color1);
 }
-main .product-description {
+main #description {
+  background-image: url(../img/background-1-1080.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 16/9;
+  transform: rotate(180deg);
+  padding: 10% 12.5% 2% 12.5%;
+}
+main #description .product-description {
+  background-color: var(--bg2);
+  box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.1);
+  transform: rotate(180deg);
   border-radius: 50px;
-  box-shadow: inset 20px 20px 30px rgba(255, 255, 255, 0.03), inset -20px -20px 30px rgba(0, 0, 0, 0.3), -20px -20px 30px rgba(255, 255, 255, 0.03), 20px 20px 30px rgba(0, 0, 0, 0.3);
-  margin: 5% 10%;
-  width: 80%;
-  color: var(--txt1);
+  border-top-left-radius: 0;
+  width: 100%;
   padding: 50px;
 }
-main .product-description h1 {
+main #description .product-description h1 {
   font-size: 2rem;
 }
-main .product-description p {
+main #description .product-description p {
   margin: 20px 0;
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 500;
 }
-main .product-description img {
+main #description .product-description img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;

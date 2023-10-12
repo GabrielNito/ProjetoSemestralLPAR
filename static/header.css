@@ -2,7 +2,7 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  background: var(--bg1);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
   z-index: 890;
 }
 header .navbar {
@@ -50,14 +50,8 @@ header .navbar .navbar_menu {
   align-items: center;
   background: var(--bg1);
 }
-header .navbar .navbar_menu .navbar_li {
-  list-style-type: none;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: -20px -20px 30px rgba(255, 255, 255, 0.03), 20px 20px 30px rgba(0, 0, 0, 0.3);
-}
-header .navbar .navbar_menu .navbar_li .navbar_a {
-  color: var(--txt1);
+header .navbar .navbar_menu .navbar_a {
+  color: var(--txt2);
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 300;
@@ -65,103 +59,119 @@ header .navbar .navbar_menu .navbar_li .navbar_a {
   border-bottom: solid 1.5px transparent;
   transition: all 0.3s ease;
 }
-header .navbar .navbar_menu .navbar_li .navbar_a:hover {
+header .navbar .navbar_menu .navbar_a:hover {
   color: var(--color2);
 }
-header .navbar .search-container {
+header .search-container {
   display: flex;
   align-items: center;
   justify-content: end;
   margin: 20px 50px;
   width: 25%;
 }
-header .navbar .search-container .search-bar {
+header .search-container .search-bar {
+  border: solid 2px var(--color1);
   border-radius: 50px;
   height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
-  box-shadow: inset 20px 20px 30px rgba(255, 255, 255, 0.03), inset -20px -20px 30px rgba(0, 0, 0, 0.3), -20px -20px 30px rgba(255, 255, 255, 0.03), 20px 20px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.05);
 }
-header .navbar .search-container .search-bar input {
+header .search-container .search-bar input {
   font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
-  background: transparent;
   border: none;
+  background: transparent;
   outline: none;
   width: 100%;
   height: 100%;
-  padding: 50px;
+  padding-left: 50px;
+  color: var(--txt1);
 }
-header .navbar .search-container .search-bar a {
+header .search-container .search-bar input::-moz-placeholder {
+  color: rgba(250, 249, 246, 0.75);
+  font-weight: 500;
+}
+header .search-container .search-bar input::placeholder {
+  color: rgba(250, 249, 246, 0.75);
+  font-weight: 500;
+}
+header .search-container .search-bar a {
+  position: relative;
+  top: 0;
+  right: -2px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   aspect-ratio: 1/1;
-  box-shadow: -20px -20px 30px rgba(255, 255, 255, 0.01), 20px 20px 30px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
-  border: solid 1px transparent;
+  border: solid 2px transparent;
   padding: 10px;
   transition: all 0.3s ease;
 }
-header .navbar .search-container .search-bar a img {
+header .search-container .search-bar a img {
   padding: 10px;
   height: 48px;
   width: 48px;
   padding: 4px;
-  color: var(--txt1);
+  color: var(--txt2);
   font-size: 2.5rem;
 }
-header .navbar .search-container .search-bar a:hover {
-  border: solid 1px var(--color1);
+header .search-container .search-bar a:hover {
+  border: solid 2px var(--color1);
 }
-header .navbar .user-menu {
+header .user-menu {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
   margin: 20px 100px 20px 50px;
 }
-header .navbar .user-menu a {
+header .user-menu a {
   text-decoration: none;
   aspect-ratio: 1/1;
-  box-shadow: -20px -20px 30px rgba(255, 255, 255, 0.03), 20px 20px 30px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
-  border: solid 1px transparent;
+  border: solid 2px transparent;
   padding: 10px;
   transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.05);
 }
-header .navbar .user-menu a img {
+header .user-menu a img {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 48px;
   width: 48px;
   padding: 4px;
-  color: var(--txt1);
   font-size: 2.5rem;
 }
-header .navbar .user-menu a .user-titles {
+header .user-menu a .favorite:nth-child(1) {
+  position: relative;
+  top: 2px;
+  border: solid 2px crimson;
+}
+header .user-menu a .user-titles {
   font-size: 0;
   transition: all 0.3s ease;
 }
-header .navbar .user-menu a:hover {
-  border: solid 1px var(--color1);
+header .user-menu a:hover {
+  border: solid 2px var(--color1);
 }
-header .navbar .hamburguer {
+header .hamburguer {
   display: none;
   cursor: pointer;
 }
-header .navbar .hamburguer .bar {
+header .hamburguer .bar {
   display: block;
   width: 30px;
   height: 3px;
   border-radius: 2px;
   margin: 5px auto;
-  background-color: var(--txt1);
+  background-color: var(--txt2);
   transition: all 0.3s ease-in-out;
 }
 
@@ -244,7 +254,6 @@ header .navbar .hamburguer .bar {
   }
   .user-menu .user-titles.active {
     font-size: 1rem;
-    border: 1px solid crimson;
   }
   .navbar_menu.active {
     left: 0;

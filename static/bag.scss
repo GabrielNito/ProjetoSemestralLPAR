@@ -77,7 +77,6 @@ main {
   button {
     margin: 20px 10%;
     width: 80%;
-    // height: 10%;
     background-color: transparent;
     outline: none;
     border: solid 1px transparent;
@@ -90,7 +89,8 @@ main {
       20px 20px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
   }
-  button:hover {
+  button:hover,
+  button:focus {
     border: solid 1px var(--color1);
   }
 }
