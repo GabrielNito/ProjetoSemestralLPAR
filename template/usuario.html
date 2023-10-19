@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/header.css">
+    <link rel="stylesheet" href="/static/global.css">
+    <link rel="stylesheet" href="/static/usuario.css">
+
+    <script src="https://kit.fontawesome.com/6eb4322f27.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="../img/logo.ico">
+    <title>Sacola</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/index.html" class="profile_picture">
+                <img src="/img/logo.svg" alt="Logo Website" class="profile_picture">
+                <p>Brand</p>
+            </a>
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <a href="">
+                        <img src="/img/magnifying-glass.svg" alt="" class="mag-glass">
+                    </a>
+                </div>
+            </div>
+            <ul class="user-menu">
+                <a href="#favoritos">
+                    <p class="user-titles">Favoritos</p>
+                    <img class="favorites" src="/img/heart.svg" alt="">
+                </a>
+                <a href="template/bag.html">
+                    <p class="user-titles">Sacola</p>
+                    <img class="sacola" src="/img/bag.svg" alt="">
+                </a>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="" class="form">
+
+            <h1>Cadastro Usuário</h1>
+            <div class="inputBox">
+                <input type="text" required="required" class="nome" autofocus="autofocus">
+                <span>Nome</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="tel" required="required" class="senha">
+                <span>Telefone</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" required="required" class="usuario">
+                <span>Email</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" required="required" class="senha">
+                <span>Senha</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" required="required" class="senha">
+                <span>Confirme sua senha</span>
+            </div>
+
+            <a href="#" class="button" onclick="send()"><i></i><span>Enviar</span></a>
+
+            <div class="new">
+                <span class="conta">Não possui uma conta ainda? </span><a href="./page1.html" class="create">Crie uma
+                    conta agora</a>
+            </div>
+
+        </form>
+    </main>
+
+    <script src="/src/header.js"></script>
+</body>
+
+</html>

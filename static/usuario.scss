@@ -1,0 +1,128 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../img/background-1-1080.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 10 / 5;
+}
+body {
+  overflow-y: hidden;
+}
+
+form {
+  margin-top: -15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  width: 40%;
+  padding: 100px;
+  box-shadow: inset 20px 20px 30px rgba(255, 255, 255, 0.015),
+    inset -20px -20px 30px rgba(0, 0, 0, 0.15),
+    -20px -20px 30px rgba(255, 255, 255, 0.015),
+    20px 20px 30px rgba(0, 0, 0, 0.15);
+  background-color: var(--color2);
+  border-radius: 50px;
+}
+
+form h1 {
+  color: var(--txt2);
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.inputBox {
+  font-size: 1.3rem;
+  position: relative;
+  width: 100%;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  background: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: var(--txt2);
+  font-size: 1em;
+  transition: 0.2s;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0.75vw;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.25);
+  transition: 0.2s;
+}
+
+.inputBox:nth-child(3) input,
+.inputBox:nth-child(3) span,
+.inputBox:nth-child(4) input,
+.inputBox:nth-child(4) span,
+.inputBox:nth-child(5) input,
+.inputBox:nth-child(5) span,
+.inputBox:nth-child(6) input,
+.inputBox:nth-child(6) span {
+  margin-top: 10px;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  font-weight: 700;
+  padding: 0 10px;
+  letter-spacing: 0.2em;
+
+  background-color: var(--color2);
+  color: var(--color5);
+  text-shadow: none;
+  border-radius: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 2px solid var(--color5);
+}
+
+.button {
+  text-decoration: none;
+  font-size: 1.75rem;
+  background: var(--color1);
+  border: solid 1px transparent;
+  border-radius: 20px;
+  outline: none;
+  padding: 20px 100px;
+  margin: 50px 20px;
+  box-shadow: -20px -20px 30px rgba(255, 255, 255, 0.015),
+    20px 20px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  color: var(--txt2);
+}
+.button:hover {
+  border: solid 1px var(--color1);
+}
+
+.button span {
+  color: var(--txt2);
+}
+
+.new span {
+  color: var(--txt2);
+  font-weight: 500;
+}
+.new a {
+  color: var(--color5);
+  font-weight: 700;
+  text-shadow: none;
+}

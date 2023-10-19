@@ -1,0 +1,111 @@
+main {
+  display: flex;
+  background-image: url(../img/background-1-1080.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 10 / 5;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  margin: 40px 0 0 5%;
+  .product-container {
+    border-radius: 25px;
+    padding: 20px 50px;
+    display: flex;
+
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(144, 238, 144, 0.25);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    img {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      height: 20vh;
+      border-radius: 20px;
+    }
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 50px;
+      color: var(--txt2);
+      p {
+        font-weight: 500;
+      }
+      p:nth-child(3) {
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+      a {
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      h2 {
+        text-align: end;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.order {
+  height: 75vh;
+  width: 25%;
+  margin: 40px 5%;
+  color: var(--txt1);
+  padding: 50px;
+
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(144, 238, 144, 0.25);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  h2 {
+    text-align: end;
+  }
+  h2:nth-child(7) {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  h3 {
+    font-weight: 500;
+  }
+  hr {
+    margin: 20px 0;
+    border: solid 1px black;
+  }
+  button {
+    margin: 20px 10%;
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+    border: solid 1px transparent;
+    border-radius: 20px;
+    font-size: 3rem;
+    color: var(--txt2);
+    padding: 20px;
+
+    box-shadow: -20px -20px 30px rgba(255, 255, 255, 0.03),
+      20px 20px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+
+    background: var(--color1);
+  }
+  button:hover,
+  button:focus {
+    border: solid 1px var(--color1);
+  }
+}

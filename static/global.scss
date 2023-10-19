@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
+// #292d32
+:root {
+  --bg1: #292d32;
+  --bg2: #faf9f4;
+  --txt1: #faf9f4;
+  --txt2: #292d32;
+  --txtHover: #6a6b6e;
+  --offwhite: #ede1f3;
+  --color1: #90ee90;
+  --color2: #d0f0dd;
+  --color3: #99c3ee;
+  --color4: #ee99ee;
+  --color5: #eec399;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: var(--txt2);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color2);
+}
+
+@media (max-width: 750px) {
+  body {
+    background-image: url(../img/background-1-480.svg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    // height: 100%;
+    aspect-ratio: 480 / 800 !important;
+  }
+}
+
+// https://colors.dopely.top/color-toner/90ee90-shades-40
+
+/* font-family: 'DM Sans', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Sora', sans-serif; */
+/* font-family: 'Syne', sans-serif; */
