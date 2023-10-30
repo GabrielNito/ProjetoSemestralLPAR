@@ -1,0 +1,176 @@
+main {
+  position: relative;
+  top: -20vh;
+  width: 100%;
+  height: 100%;
+  .product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+
+    background-image: url(../img/background-1-1080.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 10 / 5;
+    .images-container {
+      aspect-ratio: 1 / 1;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      width: 35%;
+      margin-top: 12vh;
+      border-radius: 50px;
+      border-top-left-radius: 0;
+
+      box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.1);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50px;
+        border-top-left-radius: 0;
+      }
+    }
+    .infos-container {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      aspect-ratio: 1 / 1;
+      width: 35%;
+      margin-top: 12vh;
+      .infos {
+        background-color: var(--bg2);
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        border-top-left-radius: 0;
+        padding: 50px;
+
+        box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        h1,
+        p,
+        h2,
+        a {
+          margin: 10px;
+        }
+        h1 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        .rating {
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+          .rating-star {
+            font-size: 1.5rem;
+            color: var(--color5);
+          }
+        }
+        .shipping {
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+          font-size: 1.25rem !important;
+          p {
+            font-size: 1.25rem;
+            margin: 10px 5px;
+          }
+          h3 {
+            margin: 10px 0;
+            font-weight: 500;
+          }
+        }
+        .description-link {
+          margin: 0 0 0 10px;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 1.25rem;
+          width: fit-content;
+          i {
+            margin: 10px 5px;
+          }
+        }
+        .favorite {
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+          font-size: 1.25rem !important;
+          p {
+            font-size: 1.25rem;
+            margin: 10px 5px;
+          }
+        }
+        .add-to-cart {
+          text-decoration: none;
+          width: fit-content;
+          height: fit-content;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2rem;
+          background: transparent;
+          border: solid 1px transparent;
+          border-radius: 20px;
+          outline: none;
+          padding: 25px 50px;
+          margin: 20px;
+          background-color: var(--color1);
+          transition: all 0.3s ease;
+        }
+        .add-to-cart:hover {
+          border: solid 1px var(--color1);
+        }
+      }
+    }
+  }
+  #description {
+    background-image: url(../img/background-1-1080.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 16 / 9;
+    transform: rotate(180deg);
+    padding: 10% 12.5% 2% 12.5%;
+    .product-description {
+      background-color: var(--bg2);
+      box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.1);
+      transform: rotate(180deg);
+      border-radius: 50px;
+      border-top-left-radius: 0;
+      width: 100%;
+      padding: 50px;
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        margin: 20px 0;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+      img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        width: 50%;
+        margin: 0 25%;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+// https://www.galaxcms.com.br/up_arquivos/1149/1-20170124191426.pdf
+// https://carlosvmelo.files.wordpress.com/2010/12/nbr-14565-procedimento-basico-para-elaboracao-de-projetos-de-cabeamento-de-telecomunicacoes-para-rede-interna-estruturada.pdf
