@@ -66,8 +66,12 @@ header .search-container {
   display: flex;
   align-items: center;
   justify-content: end;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-60%);
   margin: 20px 50px;
-  width: 25%;
+  width: 50%;
 }
 header .search-container .search-bar {
   border: solid 2px var(--color1);
@@ -123,6 +127,55 @@ header .search-container .search-bar a img {
 }
 header .search-container .search-bar a:hover {
   border: solid 2px var(--color1);
+}
+header .search-container .search-results {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 9vh;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 8px 32px 0 rgba(144, 238, 144, 0.37);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 35px;
+  border: 2px solid var(--color2);
+  background: rgba(0, 0, 0, 0.1);
+}
+header .search-container .search-results .result-product {
+  text-decoration: none;
+  display: flex;
+  margin: 10px;
+  border-radius: 30px;
+  height: 200px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+header .search-container .search-results .result-product img {
+  margin: 15px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 170px;
+  border-radius: 20px;
+}
+header .search-container .search-results .result-product .result-container {
+  padding: 20px;
+}
+header .search-container .search-results .result-product .result-container .title {
+  font-size: 2.5rem;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+header .search-container .search-results .result-product .result-container p {
+  font-size: 1rem;
+  margin: 10px;
+}
+header .search-container .search-results .result-product .result-container h1 {
+  position: relative;
+  right: 0;
+  font-size: 2rem;
+  margin: 10px;
 }
 header .user-menu {
   display: flex;

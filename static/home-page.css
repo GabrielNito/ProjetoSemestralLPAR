@@ -1,0 +1,95 @@
+body {
+  background: url(/img/background-1-1080.svg);
+  overflow: hidden;
+}
+
+#slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+#slider-wrapper #slides-container {
+  height: calc(100vh - 2rem);
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+#slider-wrapper #slides-container .slide {
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex: 1 0 80%;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2.5%;
+  border-radius: 50px;
+  background-color: var(--bg2);
+}
+#slider-wrapper #slides-container .slide img {
+  aspect-ratio: 16/5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+#slider-wrapper #slides-container .slide h1 {
+  margin: 20px 50px;
+  font-size: 2.5rem;
+}
+#slider-wrapper #slides-container .slide a {
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background: transparent;
+  border: solid 1px transparent;
+  border-radius: 20px;
+  outline: none;
+  padding: 25px 50px;
+  margin-bottom: 50px;
+  background-color: var(--color1);
+  transition: all 0.3s ease;
+}
+#slider-wrapper #slides-container .slide:nth-child(1) {
+  margin-left: 10%;
+}
+#slider-wrapper #slides-container .slide:nth-child(5) {
+  margin-right: 10%;
+}
+
+#prev,
+#next {
+  position: absolute;
+  display: flex;
+  top: 40%;
+  border: none;
+  font-size: 3rem;
+  padding: 23.5px 26.5px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(144, 238, 144, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#prev {
+  left: 4%;
+}
+
+#next {
+  right: 4%;
+}/*# sourceMappingURL=home-page.css.map */

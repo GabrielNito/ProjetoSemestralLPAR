@@ -7,7 +7,10 @@
 
   <link rel="stylesheet" href="/static/global.css">
   <link rel="stylesheet" href="/static/header.css">
-  <link rel="stylesheet" href="/static/style.css">
+
+  <link rel="stylesheet" href="static/home-page.css">
+
+  <script src="https://kit.fontawesome.com/6eb4322f27.js" crossorigin="anonymous"></script>
 
   <link rel="icon" href="img/logo.ico">
   <title>Brand - Homepage</title>
@@ -22,11 +25,58 @@
       </a>
       <div class="search-container">
         <div class="search-bar">
-          <input type="text" placeholder="Search">
+          <input type="text" placeholder="Search" id="search-input">
           <a href="">
             <img src="/img/magnifying-glass.svg" alt="" class="mag-glass">
           </a>
         </div>
+        <ul class="search-results">
+          <li class="result-product" id="product1">
+            <img src="img/product-1.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Product 1</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore laborum modi non! Iusto quo
+                aspernatur magni dolor qui, officiis cumque!</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product2">
+            <img src="img/product-2.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Product 2</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore laborum modi non! Iusto quo
+                aspernatur magni dolor qui, officiis cumque!</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product3">
+            <img src="img/product-3.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Product 3</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore laborum modi non! Iusto quo
+                aspernatur magni dolor qui, officiis cumque!</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product4">
+            <img src="img/product-4.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Product 4</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore laborum modi non! Iusto quo
+                aspernatur magni dolor qui, officiis cumque!</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product5">
+            <img src="img/product-5.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Product 5</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore laborum modi non! Iusto quo
+                aspernatur magni dolor qui, officiis cumque!</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+        </ul>
       </div>
       <ul class="user-menu">
         <a href="#favoritos">
@@ -52,12 +102,52 @@
 
   <main>
 
-    <a href="./template/product-1.html">Product 1</a>
+    <div id="slider-wrapper">
+
+      <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+
+      <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+
+      <ul id="slides-container">
+        <li class="slide">
+          <img src="img/product-1.jpg" alt="">
+          <h1>Product 1</h1>
+          <a href="template/product-1.html">Clique para mais informações</a>
+        </li>
+
+        <li class="slide">
+          <img src="img/product-2.jpg" alt="">
+          <h1>Product 2</h1>
+          <a href="template/product-1.html">Clique para mais informações</a>
+        </li>
+
+        <li class="slide">
+          <img src="img/product-3.jpg" alt="">
+          <h1>Product 3</h1>
+          <a href="template/product-1.html">Clique para mais informações</a>
+        </li>
+
+        <li class="slide">
+          <img src="img/product-4.jpg" alt="">
+          <h1>Product 4</h1>
+          <a href="template/product-1.html">Clique para mais informações</a>
+        </li>
+
+        <li class="slide">
+          <img src="img/product-5.jpg" alt="">
+          <h1>Product 5</h1>
+          <a href="template/product-1.html">Clique para mais informações</a>
+        </li>
+
+      </ul>
+
+    </div>
 
   </main>
 
-  <script src="src/idk.js"></script>
   <script src="src/header.js"></script>
+  <script src="src/carousel.js"></script>
+  <script src="src/search-bar.js"></script>
 </body>
 
 </html>
