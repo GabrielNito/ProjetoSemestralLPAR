@@ -22,7 +22,6 @@ search.addEventListener('input', (event) => {
 const resultProducts = document.querySelectorAll('.result-product')
 
 for (let i = 0; i < resultProducts.length; i++) {
-    console.log('buseta');
     resultProducts[i].addEventListener('mouseover', (event) => {
         resultProducts[i].style.background = 'rgba(144, 238, 144, 0.3)'
     })
