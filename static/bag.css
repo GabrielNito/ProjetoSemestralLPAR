@@ -1,3 +1,7 @@
+body {
+  background: url(/img/background-1-1080.svg);
+}
+
 main {
   display: flex;
 }
@@ -10,10 +14,15 @@ main {
   margin: 40px 0 0 5%;
 }
 .products .product-container {
-  box-shadow: inset 20px 20px 30px rgba(255, 255, 255, 0.03), inset -20px -20px 30px rgba(0, 0, 0, 0.3), -20px -20px 30px rgba(255, 255, 255, 0.03), 20px 20px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(144, 238, 144, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 50px;
   padding: 20px 50px;
   display: flex;
+  justify-content: space-between;
 }
 .products .product-container img {
   aspect-ratio: 1/1;
@@ -28,14 +37,6 @@ main {
   justify-content: space-between;
   margin-left: 50px;
 }
-.products .product-container .info-container p {
-  color: var(--txt1);
-  font-weight: 300;
-}
-.products .product-container .info-container p:nth-child(3) {
-  font-size: 1.25rem;
-  font-weight: 500;
-}
 .products .product-container .info-container a {
   text-decoration: none;
   color: var(--txt1);
@@ -46,9 +47,21 @@ main {
   text-align: end;
   font-size: 2rem;
 }
+.products .product-container button {
+  all: unset;
+  border-radius: 20px;
+  padding: 12px 20px;
+  margin: 20px;
+  background-color: var(--color1);
+}
 
 .order {
-  box-shadow: inset 20px 20px 30px rgba(255, 255, 255, 0.03), inset -20px -20px 30px rgba(0, 0, 0, 0.3), -20px -20px 30px rgba(255, 255, 255, 0.03), 20px 20px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(144, 238, 144, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   height: 75vh;
   width: 25%;
   margin: 40px 5%;
@@ -71,19 +84,13 @@ main {
   margin: 20px 0;
 }
 .order button {
-  margin: 20px 10%;
+  all: unset;
+  text-align: center;
   width: 80%;
-  background-color: transparent;
-  outline: none;
-  border: solid 1px transparent;
-  border-radius: 20px;
-  font-size: 3rem;
   color: var(--txt1);
+  font-size: 3rem;
+  border-radius: 20px;
   padding: 20px;
-  box-shadow: -20px -20px 30px rgba(255, 255, 255, 0.03), 20px 20px 30px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-}
-.order button:hover,
-.order button:focus {
-  border: solid 1px var(--color1);
+  margin: 20px;
+  background-color: var(--color1);
 }/*# sourceMappingURL=bag.css.map */
