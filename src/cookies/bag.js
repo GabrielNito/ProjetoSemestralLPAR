@@ -59,16 +59,17 @@ function update_price_bag() {
     total_price.innerHTML = final_price
 }
 function delete_item_from_bag(callback) {
-    const remove = document.getElementsByClassName("remove")
+    const remove = document.querySelectorAll(".remove")
     for (let i = 0; i < remove.length; i++) {
         remove[i].addEventListener('click', () => {
             try {
                 product = remove[i].parentNode;
                 product.remove()
                 title = remove[i].previousElementSibling.childNodes[0].textContent
+                console.log(title);
                 sessionStorage.removeItem(title)
             } catch (e) {
-                alert("Não foi possível remover o item da sacola, por favor atualize a página e tente novamente")
+                console.log(e);
             }
             callback()
         })
