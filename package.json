@@ -11,6 +11,7 @@
     "css-loader": "^6.8.1",
     "scss-loader": "^0.0.1",
     "style-loader": "^3.3.3",
+    "vite": "^5.0.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
@@ -107,7 +108,6 @@
     "update-browserslist-db": "^1.0.11",
     "uri-js": "^4.4.1",
     "util-deprecate": "^1.0.2",
-    "vite": "^4.5.0",
     "watchpack": "^2.4.0",
     "webpack-merge": "^5.9.0",
     "webpack-sources": "^3.2.3",

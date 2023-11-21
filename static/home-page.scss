@@ -30,6 +30,8 @@ body {
       margin: 0 2.5%;
       border-radius: 50px;
       background-color: var(--bg2);
+      scroll-behavior: smooth;
+      transition: all 0.3s ease;
       img {
         aspect-ratio: 16 / 5;
         object-fit: cover;
@@ -58,6 +60,7 @@ body {
         padding: 25px 50px;
         margin-bottom: 50px;
         background-color: var(--color1);
+        scroll-behavior: smooth;
         transition: all 0.3s ease;
       }
     }
