@@ -8,8 +8,7 @@ function saveProduct() {
     }
     sessionStorage.setItem(nome, JSON.stringify(data))
 }
-
 const button = document.getElementById("add-to-cart")
-button.addEventListener('click', event => {
+button.addEventListener('click', () => {
     saveProduct()
 })
