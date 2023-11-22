@@ -4,9 +4,6 @@ main {
   align-items: center;
   height: 88.1svh;
   color: black;
-  background: url(/img/background-1-1080.svg);
-  object-fit: cover;
-  overflow: hidden;
 }
 
 form {
@@ -99,5 +96,5 @@ form h1 {
   color: var(--txt2);
 }
 .new a {
-  color: var(--color1);
+  color: rgba(0, 0, 0, 0.75);
 }

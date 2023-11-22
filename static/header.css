@@ -283,15 +283,22 @@ header .hamburguer .bar {
     margin-top: 30px;
   }
   .user-menu {
-    width: 20%;
+    min-width: 200px;
     position: fixed;
     top: 12vh;
     right: 0;
     margin: 0 !important;
     flex-direction: column;
-    background-color: var(--bg1);
-    height: 75vh;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(144, 238, 144, 0.37);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: calc(100% - 12vh);
     z-index: -1;
+    display: none !important;
+    transition: all 0.3s ease;
   }
   .user-menu a {
     margin: 15px 0;
@@ -307,6 +314,9 @@ header .hamburguer .bar {
   }
   .user-menu .user-titles.active {
     font-size: 1rem;
+  }
+  .user-menu.active {
+    display: flex !important;
   }
   .navbar_menu.active {
     left: 0;

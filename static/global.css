@@ -25,9 +25,8 @@
 
 body {
   background-color: var(--color1);
-}
-
-/* font-family: 'DM Sans', sans-serif; */
-/* font-family: 'Montserrat', sans-serif; */
-/* font-family: 'Sora', sans-serif; */
-/* font-family: 'Syne', sans-serif; *//*# sourceMappingURL=global.css.map */
+  background: url(/img/background-1-1080.svg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/9;
+}/*# sourceMappingURL=global.css.map */
