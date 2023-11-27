@@ -147,6 +147,7 @@ main #description {
   aspect-ratio: 16/9;
   transform: rotate(180deg);
   padding: 10% 12.5% 2% 12.5%;
+  background-color: var(--color1);
 }
 main #description .product-description {
   background-color: var(--bg2);
@@ -172,4 +173,242 @@ main #description .product-description img {
   width: 50%;
   margin: 0 25%;
   border-radius: 50px;
+}
+
+@media (max-width: 1500px) {
+  main .product-container {
+    margin-top: 5vh;
+  }
+  main .product-container .images-container {
+    z-index: 10;
+  }
+  main .product-container .infos-container .infos h1 {
+    font-size: 1.5rem;
+  }
+  main .product-container .infos-container .infos p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos h2 {
+    font-size: 1.25rem;
+  }
+  main .product-container .infos-container .infos .rating .rating-star {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .shipping {
+    font-size: 1rem !important;
+  }
+  main .product-container .infos-container .infos .shipping p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .description-link {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .favorite {
+    font-size: 1.25rem !important;
+  }
+  main .product-container .infos-container .infos .favorite p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .add-to-cart {
+    font-size: 1.25rem;
+  }
+  main #description .product-description h1 {
+    font-size: 1.25rem;
+  }
+  main #description .product-description p {
+    font-size: 1rem;
+  }
+  main #description .product-description img {
+    border-radius: 20px;
+  }
+}
+@media (max-width: 1094px) {
+  main .product-container {
+    margin-top: 7.5vh;
+  }
+  main .product-container .images-container {
+    z-index: 10;
+    width: 40%;
+  }
+  main .product-container .infos-container {
+    width: 40%;
+  }
+  main .product-container .infos-container .infos {
+    padding: 20px;
+  }
+  main .product-container .infos-container .infos h1 {
+    font-size: 1.5rem;
+  }
+  main .product-container .infos-container .infos p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos h2 {
+    font-size: 1.25rem;
+  }
+  main .product-container .infos-container .infos .rating .rating-star {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .shipping {
+    font-size: 1rem !important;
+  }
+  main .product-container .infos-container .infos .shipping p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .description-link {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .favorite {
+    font-size: 1.25rem !important;
+  }
+  main .product-container .infos-container .infos .favorite p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .add-to-cart {
+    font-size: 1.25rem;
+  }
+  main #description {
+    padding: 7.5% 7.5% 2% 7.5%;
+  }
+  main #description .product-description h1 {
+    font-size: 1.25rem;
+  }
+  main #description .product-description p {
+    font-size: 1rem;
+  }
+  main #description .product-description img {
+    border-radius: 20px;
+  }
+}
+@media (max-width: 850px) {
+  main .product-container {
+    margin-top: 7.5vh;
+  }
+  main .product-container .images-container {
+    z-index: 10;
+    width: 40%;
+  }
+  main .product-container .infos-container {
+    width: 40%;
+  }
+  main .product-container .infos-container .infos {
+    padding: 20px;
+  }
+  main .product-container .infos-container .infos h1,
+  main .product-container .infos-container .infos p,
+  main .product-container .infos-container .infos h2,
+  main .product-container .infos-container .infos a {
+    margin: 5px;
+  }
+  main .product-container .infos-container .infos h1 {
+    font-size: 1.5rem;
+  }
+  main .product-container .infos-container .infos p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos h2 {
+    font-size: 1.25rem;
+  }
+  main .product-container .infos-container .infos .rating .rating-star {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .shipping {
+    font-size: 1rem !important;
+  }
+  main .product-container .infos-container .infos .shipping p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .description-link {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .favorite {
+    font-size: 1.25rem !important;
+  }
+  main .product-container .infos-container .infos .favorite p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .add-to-cart {
+    font-size: 1.25rem;
+    padding: 12px 20px;
+  }
+  main #description {
+    padding: 7.5% 7.5% 2% 7.5%;
+  }
+  main #description .product-description h1 {
+    font-size: 1.25rem;
+  }
+  main #description .product-description p {
+    font-size: 1rem;
+  }
+  main #description .product-description img {
+    border-radius: 20px;
+  }
+}
+@media (max-width: 790px) {
+  main .product-container {
+    flex-direction: column;
+  }
+  main .product-container .images-container {
+    width: 80%;
+    margin-top: 15vh;
+    z-index: 10;
+  }
+  main .product-container .infos-container {
+    width: 80%;
+    margin-top: -15%;
+  }
+  main .product-container .infos-container .infos {
+    border-radius: 0;
+    padding: 20px;
+  }
+  main .product-container .infos-container .infos h1 {
+    margin-top: 15%;
+    font-size: 1.5rem;
+  }
+  main .product-container .infos-container .infos p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos h2 {
+    font-size: 1.25rem;
+  }
+  main .product-container .infos-container .infos .rating .rating-star {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .shipping {
+    font-size: 1rem !important;
+  }
+  main .product-container .infos-container .infos .shipping p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .description-link {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .favorite {
+    font-size: 1.25rem !important;
+  }
+  main .product-container .infos-container .infos .favorite p {
+    font-size: 1rem;
+  }
+  main .product-container .infos-container .infos .add-to-cart {
+    font-size: 1.25rem;
+  }
+  main #description {
+    padding: 0;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+  }
+  main #description .product-description h1 {
+    font-size: 1.25rem;
+  }
+  main #description .product-description p {
+    font-size: 1rem;
+  }
+  main #description .product-description img {
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    margin: 0;
+    border-radius: 20px;
+  }
 }/*# sourceMappingURL=product.css.map */

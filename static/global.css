@@ -24,8 +24,9 @@
 }
 
 body {
-  background-color: var(--color1);
   background: url(/img/background-1-1080.svg);
+  background-color: var(--color2);
+  background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 16/9;

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/static/global.css">
+  <link rel="stylesheet" href="/static/header.css">
+  <link rel="stylesheet" href="/static/product.css">
+
+  <script src="https://kit.fontawesome.com/6eb4322f27.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" href="../img/logo.ico">
+  <title>Brand - Product</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="/index.html" class="profile_picture">
+        <img src="/img/logo.svg" alt="Logo Website" class="profile_picture">
+        <p>Nuance</p>
+      </a>
+      <div class="search-container">
+        <div class="search-bar">
+          <input type="text" placeholder="Search" id="search-input">
+          <a href="">
+            <img src="/img/magnifying-glass.svg" alt="" class="mag-glass">
+          </a>
+        </div>
+        <ul class="search-results">
+          <li class="result-product" id="product1">
+            <img src="/img/Sessões de Aconselhamento Nutricional.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Sessões de Aconselhamento Nutricional</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product2">
+            <img src="img/Programas de Gerenciamento de Peso.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Programas de Gerenciamento de Peso</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product3">
+            <img src="img/Avaliações de Nutrição Funcional.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Avaliações de Nutrição Funcional</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product4">
+            <img src="img/Oficinas de Preparo de Refeições.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Oficinas de
+              <Pre> de Refeições</Pre>
+              </p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product5">
+            <img src="img/Programa de Detox Nutricional.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Programa de Detox Nutricional</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul class="user-menu">
+        <a href="template/bag.html">
+          <p class="user-titles">Sacola</p>
+          <img class="sacola" src="/img/bag.svg" alt="">
+        </a>
+        <a href="template/usuario.html">
+          <p class="user-titles">Usuário</p>
+          <img class="usuario" src="/img/user.svg" alt="">
+        </a>
+      </ul>
+      <div class="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="product-container">
+      <div class="images-container">
+        <img id="product-image" src="/img/Oficinas de Preparo de Refeições.jpg" alt="">
+      </div>
+
+      <div class="infos-container">
+
+        <div class="infos">
+          <h1 id="name-product">Oficinas de Preparo de Refeições</h1>
+          <div class="rating">
+            <p>Avaliação:</p>
+            <i class="rating-star fa-solid fa-star"></i>
+            <i class="rating-star fa-solid fa-star"></i>
+            <i class="rating-star fa-solid fa-star"></i>
+            <i class="rating-star fa-solid fa-star"></i>
+            <i class="rating-star fa-solid fa-star"></i>
+          </div>
+          <h2 id="price">$999,99</h2>
+
+          <a href="#description" class="description-link"><i class="fa-solid fa-bars"></i> Descrição completa</a>
+
+          <a id="add-to-cart" class="add-to-cart" href="./bag.html">Adicionar ao carrinho</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="description">
+      <div class="product-description">
+        <h1>Descrição</h1>
+        <p>Explore uma relação mais saudável com a comida através dos nossos workshops de alimentação consciente.
+          Aprenda a saborear cada mordida, entenda os sinais de fome e saciedade e cultive uma abordagem consciente para
+          nutrir seu corpo. Esses workshops fornecem técnicas práticas para fazer escolhas alimentares conscientes e
+          promover uma conexão positiva com suas refeições.</p>
+        <img src="/img/Oficinas de Preparo de Refeições.jpg" alt="">
+      </div>
+    </section>
+  </main>
+
+  <script src="/src/header.js"></script>
+  <script src="/src/search-bar.js"></script>
+  <script src="/src/session-storage/cookies.js"></script>
+</body>
+
+</html>

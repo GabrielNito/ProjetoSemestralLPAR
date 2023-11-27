@@ -145,6 +145,7 @@ main {
     aspect-ratio: 16 / 9;
     transform: rotate(180deg);
     padding: 10% 12.5% 2% 12.5%;
+    background-color: var(--color1);
     .product-description {
       background-color: var(--bg2);
       box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.1);
@@ -172,5 +173,270 @@ main {
   }
 }
 
-// https://www.galaxcms.com.br/up_arquivos/1149/1-20170124191426.pdf
-// https://carlosvmelo.files.wordpress.com/2010/12/nbr-14565-procedimento-basico-para-elaboracao-de-projetos-de-cabeamento-de-telecomunicacoes-para-rede-interna-estruturada.pdf
+@media (max-width: 1500px) {
+  main {
+    .product-container {
+      margin-top: 5vh;
+      .images-container {
+        z-index: 10;
+      }
+      .infos-container {
+        .infos {
+          h1 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          h2 {
+            font-size: 1.25rem;
+          }
+          .rating {
+            .rating-star {
+              font-size: 1rem;
+            }
+          }
+          .shipping {
+            font-size: 1rem !important;
+            p {
+              font-size: 1rem;
+            }
+          }
+          .description-link {
+            font-size: 1rem;
+          }
+          .favorite {
+            font-size: 1.25rem !important;
+            p {
+              font-size: 1rem;
+            }
+          }
+          .add-to-cart {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+    #description {
+      .product-description {
+        h1 {
+          font-size: 1.25rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1094px) {
+  main {
+    .product-container {
+      margin-top: 7.5vh;
+      .images-container {
+        z-index: 10;
+        width: 40%;
+      }
+      .infos-container {
+        width: 40%;
+        .infos {
+          padding: 20px;
+          h1 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          h2 {
+            font-size: 1.25rem;
+          }
+          .rating {
+            .rating-star {
+              font-size: 1rem;
+            }
+          }
+          .shipping {
+            font-size: 1rem !important;
+            p {
+              font-size: 1rem;
+            }
+          }
+          .description-link {
+            font-size: 1rem;
+          }
+          .favorite {
+            font-size: 1.25rem !important;
+            p {
+              font-size: 1rem;
+            }
+          }
+          .add-to-cart {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+    #description {
+      padding: 7.5% 7.5% 2% 7.5%;
+      .product-description {
+        h1 {
+          font-size: 1.25rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  main {
+    .product-container {
+      margin-top: 7.5vh;
+      .images-container {
+        z-index: 10;
+        width: 40%;
+      }
+      .infos-container {
+        width: 40%;
+        .infos {
+          padding: 20px;
+          h1,
+          p,
+          h2,
+          a {
+            margin: 5px;
+          }
+          h1 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          h2 {
+            font-size: 1.25rem;
+          }
+          .rating {
+            .rating-star {
+              font-size: 1rem;
+            }
+          }
+          .shipping {
+            font-size: 1rem !important;
+            p {
+              font-size: 1rem;
+            }
+          }
+          .description-link {
+            font-size: 1rem;
+          }
+          .favorite {
+            font-size: 1.25rem !important;
+            p {
+              font-size: 1rem;
+            }
+          }
+          .add-to-cart {
+            font-size: 1.25rem;
+            padding: 12px 20px;
+          }
+        }
+      }
+    }
+    #description {
+      padding: 7.5% 7.5% 2% 7.5%;
+      .product-description {
+        h1 {
+          font-size: 1.25rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  main {
+    .product-container {
+      flex-direction: column;
+      .images-container {
+        width: 80%;
+        margin-top: 15vh;
+        z-index: 10;
+      }
+      .infos-container {
+        width: 80%;
+        margin-top: -15%;
+        .infos {
+          border-radius: 0;
+          padding: 20px;
+          h1 {
+            margin-top: 15%;
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          h2 {
+            font-size: 1.25rem;
+          }
+          .rating {
+            .rating-star {
+              font-size: 1rem;
+            }
+          }
+          .shipping {
+            font-size: 1rem !important;
+            p {
+              font-size: 1rem;
+            }
+          }
+          .description-link {
+            font-size: 1rem;
+          }
+          .favorite {
+            font-size: 1.25rem !important;
+            p {
+              font-size: 1rem;
+            }
+          }
+          .add-to-cart {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+    #description {
+      padding: 0;
+      margin-top: 10%;
+      margin-left: 10%;
+      width: 80%;
+      .product-description {
+        h1 {
+          font-size: 1.25rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        img {
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          width: 100%;
+          margin: 0;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

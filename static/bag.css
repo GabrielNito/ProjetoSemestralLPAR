@@ -1,5 +1,6 @@
 main {
   display: flex;
+  justify-content: space-between;
 }
 
 .products {
@@ -38,10 +39,12 @@ main {
   text-decoration: none;
   color: var(--txt2);
   font-size: 2rem;
+  font-weight: 500;
 }
 .products .product-container .info-container h2 {
   color: var(--txt2);
   font-size: 2rem;
+  font-weight: 500;
 }
 .products .product-container button {
   all: unset;
@@ -98,4 +101,130 @@ main {
   padding: 20px;
   margin: 20px;
   background-color: var(--color1);
+}
+
+@media (max-width: 1629px) {
+  .products .product-container img {
+    border-radius: 20px;
+  }
+  .products .product-container .info-container a {
+    font-size: 1.5rem;
+  }
+  .products .product-container .info-container h2 {
+    font-size: 1.5rem;
+  }
+  .products .product-container button {
+    font-size: 1rem;
+  }
+  .order h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .order h2 {
+    text-align: end;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .order h3 {
+    font-weight: 500;
+  }
+  .order hr {
+    margin: 20px 0;
+  }
+  .order button {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 20px;
+    background-color: var(--color1);
+  }
+}
+@media (max-width: 1000px) {
+  .products {
+    width: 42.5%;
+    margin: 0;
+    margin-left: 5%;
+  }
+  .products .product-container {
+    border-radius: 20px;
+    padding: 12px;
+    flex-direction: column;
+  }
+  .products .product-container img {
+    aspect-ratio: 1;
+    height: 15vh;
+    border-radius: 12px;
+  }
+  .products .product-container .info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 0;
+  }
+  .products .product-container .info-container a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--txt2);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .products .product-container .info-container h2 {
+    margin-top: 10px;
+    color: var(--txt2);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .products .product-container button {
+    all: unset;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--color1);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .products h6 {
+    margin-top: 20%;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  h6 {
+    margin-top: 20%;
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  .order {
+    width: 42.5%;
+    margin: 0;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 5%;
+  }
+  .order h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .order h2 {
+    text-align: end;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .order h3 {
+    font-weight: 500;
+  }
+  .order hr {
+    margin: 20px 0;
+  }
+  .order button {
+    font-size: 1.25rem;
+    margin: 0;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: var(--color1);
+  }
 }/*# sourceMappingURL=bag.css.map */

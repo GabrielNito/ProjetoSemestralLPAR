@@ -1,5 +1,12 @@
 const search = document.querySelector('#search-input')
 const titles = document.getElementsByClassName('title')
+const products = [
+    "template/Sessões de Aconselhamento Nutricional.html",
+    "template/Programas de Gerenciamento de Peso.html",
+    "template/Avaliações de Nutrição Funcional.html",
+    "template/Oficinas de Preparo de Refeições.html",
+    "template/Programa de Detox Nutricional.html"
+]
 
 search.addEventListener('input', (event) => {
     const results = document.querySelector('.search-results')
@@ -29,6 +36,6 @@ for (let i = 0; i < resultProducts.length; i++) {
         resultProducts[i].style.background = 'transparent'
     })
     resultProducts[i].addEventListener('click', (event) => {
-        window.location.href = `/template/product-${i + 1}.html`
+        window.location.href = products[i]
     })
 }

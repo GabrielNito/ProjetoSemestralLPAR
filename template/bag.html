@@ -20,20 +20,59 @@
     <nav class="navbar">
       <a href="/index.html" class="profile_picture">
         <img src="/img/logo.svg" alt="Logo Website" class="profile_picture">
-        <p>Brand</p>
+        <p>Nuance</p>
       </a>
       <div class="search-container">
         <div class="search-bar">
-          <input type="text" placeholder="Search">
+          <input type="text" placeholder="Search" id="search-input">
           <a href="">
-            <img src="/img/magnifying-glass.svg" alt="">
+            <img src="/img/magnifying-glass.svg" alt="" class="mag-glass">
           </a>
         </div>
+        <ul class="search-results">
+          <li class="result-product" id="product1">
+            <img src="../img/Sessões de Aconselhamento Nutricional.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Sessões de Aconselhamento Nutricional</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product2">
+            <img src="../img/Programas de Gerenciamento de Peso.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Programas de Gerenciamento de Peso</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product3">
+            <img src="../img/Avaliações de Nutrição Funcional.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Avaliações de Nutrição Funcional</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product4">
+            <img src="../img/Oficinas de Preparo de Refeições.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Oficinas de
+              <Pre> de Refeições</Pre>
+              </p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+          <li class="result-product" id="product5">
+            <img src="../img/Programa de Detox Nutricional.jpg" alt="">
+            <div class="result-container">
+              <p class="title">Programa de Detox Nutricional</p>
+              <h1>999,99</h1>
+            </div>
+          </li>
+        </ul>
       </div>
       <ul class="user-menu">
-        <a href="./usuario.html">
+        <a href="../template/usuario.html">
           <p class="user-titles">Usuário</p>
-          <img src="/img/user.svg" alt="">
+          <img class="usuario" src="../img/user.svg" alt="">
         </a>
       </ul>
       <div class="hamburguer">
@@ -51,6 +90,7 @@
   </main>
 
   <script src="/src/header.js"></script>
+  <script src="/src/search-bar.js"></script>
   <script src="/src/session-storage/bag.js"></script>
 </body>
 

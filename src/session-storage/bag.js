@@ -52,11 +52,12 @@ function update_price_bag() {
         data = JSON.parse(sessionStorage.getItem(Object.keys(sessionStorage)[i]))
         preco = parseFloat(data.preco.replace(",", ".").split("$")[1])
         price += preco
+        console.log(preco, price);
     }
-    final_price = price + 20
     subtotal_text.innerHTML = "Subtotal"
+    subtotal_price.innerHTML = `R$${price.toFixed(2)}`;
     total_text.innerHTML = "Total"
-    subtotal_price.innerHTML = price
+    final_price = `R$${(price + 20).toFixed(2)}`
     total_price.innerHTML = final_price
 }
 function delete_item_from_bag(callback) {
