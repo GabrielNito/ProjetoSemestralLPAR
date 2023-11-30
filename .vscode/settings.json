@@ -1,5 +1,6 @@
 {
   "files.associations": {
     "*.txt": "cpp"
-  }
+  },
+  "git.ignoreLimitWarning": true
 }

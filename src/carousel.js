@@ -22,11 +22,11 @@ function slides() {
     let progress = slidesContainer.scrollLeft / slidesContainer.scrollWidth
     setTimeout(function () {
         const slideWidth = slide.clientWidth
-        slidesContainer.scrollLeft += slideWidth * 1.063
+        slidesContainer.scrollLeft += slideWidth * 1.065
         if (progress == 0.7727272727272727) {
             slidesContainer.scrollLeft -= 10000
         }
         slides()
     }, 5000)
 }
-slides()
+slides()        
